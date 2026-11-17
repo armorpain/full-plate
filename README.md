@@ -4,7 +4,10 @@ Aplicativo mobile feito em React Native (Expo) para o desafio CitizenTech.
 
 ## Integrantes
 
-Preencher com nome completo e RM de cada integrante, em ordem alfabética.
+Felipe Gomes (rm)
+Gabriela Guedes (rm567449)
+Isabela Almeida (rm)
+Victor Nogueira (rm)
 
 ## Solução
 
@@ -45,7 +48,29 @@ ODS 2 (Fome zero) e ODS 12 (Consumo e produção responsáveis), com apoio aos O
 
 ## Como executar
 
-1. Instale o Node.js e o app Expo Go no celular.
-2. Na pasta do projeto, rode `npm install`.
-3. Rode `npx expo install --fix` para alinhar as versões das bibliotecas ao Expo.
-4. Rode `npx expo start` e leia o QR code com o Expo Go.
+### Pré-requisitos
+
+- Node.js na versão 22 LTS (https://nodejs.org)
+- Git
+- App Expo Go instalado no celular (Android ou iOS), atualizado
+- Celular e computador na mesma rede Wi-Fi
+
+### Passo a passo
+
+1. Clone o repositório:
+   `git clone https://github.com/armorpain/full-plate.git`
+2. Entre na pasta do projeto:
+   `cd full-plate`
+3. Instale as dependências:
+   `npm install`
+4. Inicie o app limpando o cache:
+   `npx expo start -c`
+5. Leia o QR code com o Expo Go (no iOS, use a câmera do celular).
+
+Importante: não rode `npx expo install --fix`, pois isso altera as versões das bibliotecas definidas no projeto.
+
+### Problemas comuns
+
+- **Erro de `asset-registry` ou de módulo não encontrado:** apague a pasta `node_modules` e rode `npm install` de novo.
+- **Erro de plugin do `expo-status-bar` ou "Stripping types":** no PowerShell, rode `$env:NODE_OPTIONS="--no-experimental-strip-types"` e depois `npx expo start -c`.
+- **O app não abre no celular:** confirme que o celular e o computador estão na mesma rede Wi-Fi.
