@@ -113,8 +113,8 @@ export function NovaDoacao({ navigation }) {
                 style={{ borderWidth: 2, borderColor: C.verde, borderRadius: 12, minHeight: 64, fontSize: 28, textAlign: 'center', color: C.carvao }}
               />
               <View style={{ flexDirection: 'row', gap: 12 }}>
-                <Btn style={{ flex: 1 }} variant="s" label="Menos 5 kg" disabled={kg < 1} onPress={() => mudarKg(-5)} />
-                <Btn style={{ flex: 1 }} variant="s" label="Mais 5 kg" onPress={() => mudarKg(5)} />
+                <Btn style={{ flex: 1 }} variant="s" label="(-) Menos 5 kg" disabled={kg < 1} onPress={() => mudarKg(-5)} />
+                <Btn style={{ flex: 1 }} variant="s" label="(+) Mais 5 kg" onPress={() => mudarKg(5)} />
               </View>
             </Card>
           </>
