@@ -4,9 +4,9 @@ Aplicativo mobile feito em React Native (Expo) para o desafio CitizenTech.
 
 ## Integrantes
 
-Felipe Gomes (rm)
+Felipe Gomes (rm568543)
 Gabriela Guedes (rm567449)
-Isabela Almeida (rm)
+Isabela Almeida (rm566805)
 Victor Nogueira (rm567129)
 
 ## Solução
